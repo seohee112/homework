@@ -1,5 +1,6 @@
 # homework
 ##### 20160021 박서희
+###### 깃허브 주소 https://github.com/seohee112/homework
 ###### 본인의 개발환경은 LG그램 윈도우10 64bit
 ###### java version "1.8.0_201"
 ###### AVD는 주로 Nexus 5X API 27를 사용했습니다.
