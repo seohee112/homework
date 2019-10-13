@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <!-- 아이디와 비밀번호 -->
+
+        <EditText
+            android:hint="ID (2자리 이상)"
+            android:id="@+id/username"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="Password (5~12자리)"
+            android:id="@+id/password"
+            android:ems="10"
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="12" />
+
+    <!-- 이름, 전화번호, 주소 -->
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="Name"
+            android:inputType="text"
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/address"
+            android:hint="Address"
+            android:inputType="text"
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <!-- 개인정보 사용약관과 그 동의버튼 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="개인정보수집 및 이용동의 약관" />
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:text="(주)모바일 프로그래밍(이하 '모프')의
+서비스 제공과 관련하여 본인으로부터 취득한 개인정보는 개인정보보호법 등 관련 법령의
+개인정보보호 규정을 준수합니다. 이에 본인은 귀사가 본인으로부터 취득한 개인정보를 제휴업체에게
+제공하는 데에 동의합니다. 회사는 본 서비스를 가입자에게 제공하기 위해 아이디, 비밀번호,
+성명, 주소, 휴대전화 번호, 서비스 가입 및 해지일자를 수집/이용합니다."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp">
+
+            <RadioButton
+                android:text="동의합니다"
+                android:id="@+id/accept"
+                android:checked="true"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:text="거절합니다"
+                android:id="@+id/decline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+    <!-- 저장과 돌아가기 버튼 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/register"
+                android:text="저장하기"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/cancel"
+                android:text="돌아가기"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
