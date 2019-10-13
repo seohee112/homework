@@ -42,6 +42,7 @@
             android:layout_marginHorizontal="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:inputType="number"
             android:hint="숫자 입력1" />
 
         <EditText
@@ -49,6 +50,7 @@
             android:layout_marginHorizontal="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:inputType="number"
             android:hint="숫자 입력2" />
 
     <TextView
